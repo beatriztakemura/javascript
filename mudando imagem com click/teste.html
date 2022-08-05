@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Fontes</title>
+    <style>
+        body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                text-align: center;
+                margin: 16px;
+            }
+        h1 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 1.5em;
+            }
+        h2 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 1.3em;
+                text-align: right;
+            }
+    </style>
+</head>
+<body>
+<img src="img1.jpg" alt="fogo">
+
+    <script>
+       let minhaImagem = document.querySelector('img');
+
+       minhaImagem.onclick = function() {
+           let meuSrc = minhaImagem.getAttribute('src');
+           if (meuSrc === 'img1.jpg') {
+               minhaImagem.setAttribute('src','img2.jpg');
+           } else {
+               minhaImagem.setAttribute('src','img1.jpg');
+           }
+       }
+    </script>
+</body>
+</html>
